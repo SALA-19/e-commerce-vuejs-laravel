@@ -91,7 +91,7 @@
                 >
                 <li>
                     <a
-                    href="/src/profile.html"
+                    href="{{route('profile')}}"
                     class="flex px-3 py-2 hover:bg-slate-900"
                     >
                     <svg
@@ -114,7 +114,7 @@
                 
                 <li class="hover:bg-slate-900">
                     <a
-                    href="/src/orders.html"
+                    href="{{ route('order.index') }}"
                     class="flex items-center px-3 py-2 hover:bg-slate-900"
                     >
                     <svg
@@ -298,7 +298,7 @@
                 >
                     <li>
                         <a
-                        href="/src/profile.html"
+                        href="{{route('profile')}}"
                         class="flex px-3 py-2 hover:bg-slate-900"
                         >
                         <svg
@@ -320,7 +320,7 @@
                     </li>
                     <li>
                         <a
-                        href="/src/orders.html"
+                        href="{{ route('order.index') }}"
                         class="flex px-3 py-2 hover:bg-slate-900"
                         >
                         <svg
