@@ -18,7 +18,16 @@
           Products
         </span>
       </router-link>
-      <router-link :to="{name: 'app.dashboard'}"
+      <router-link :to="{name: 'app.orders'}"
+                   class="flex items-center p-2 rounded transition-colors hover:bg-white/70">
+        <span class="mr-2">
+          <Bars4Icon class="w-5"/>
+        </span>
+        <span class="text-md">
+          Orders
+        </span>
+      </router-link>
+      <router-link :to="{name: 'app.users'}"
                    class="flex items-center p-2 rounded transition-colors hover:bg-white/70">
         <span class="mr-2">
           <UsersIcon class="w-5"/>
@@ -27,6 +36,16 @@
           Users
         </span>
       </router-link>
+      <router-link :to="{name: 'app.customers'}"
+                   class="flex items-center p-2 rounded transition-colors hover:bg-white/70">
+        <span class="mr-2">
+          <UserGroupIcon class="w-5"/>
+        </span>
+        <span class="text-md">
+          Customers
+        </span>
+      </router-link>
+     
       <router-link :to="{name: 'app.dashboard'}"
                    class="flex items-center p-2 rounded transition-colors hover:bg-white/70">
         <span class="mr-2">
@@ -40,7 +59,7 @@
   </template>
   
   <script setup>
-    import {HomeIcon, UsersIcon, Bars4Icon, ChartBarIcon} from '@heroicons/vue/24/outline'
+    import {HomeIcon, UsersIcon, Bars4Icon, ChartBarIcon, UserGroupIcon} from '@heroicons/vue/24/outline'
   </script>
   
   <style scoped>

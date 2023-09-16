@@ -17,6 +17,7 @@
     <div v-else class="min-h-full bg-gray-200 flex items-center justify-center">
       <Spinner />
     </div>
+    <Toast />
   </template>
   
   <script setup>
@@ -25,6 +26,7 @@ import Sidebar from "./Sidebar.vue";
 import Navbar from "./Navbar.vue";
 import Spinner from "./core/Spinner.vue";
 import store from "../store";
+import Toast from './core/Toast.vue';
 const {title} = defineProps({
   title: String
 })
@@ -37,7 +39,8 @@ function updateSidebarState() {
   sidebarOpened.value = window.outerWidth > 768;
 }
 onMounted(() => {
-  store.dispatch('getUser')
+  store.dispatch('getCurrentUser')
+  store.dispatch('getCountries')
   updateSidebarState();
   window.addEventListener('resize', updateSidebarState)
 })

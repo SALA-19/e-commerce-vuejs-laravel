@@ -187,7 +187,7 @@
                                 class="w-full focus:border-purple-600 focus:ring-purple-600 border-gray-300 rounded"
                             />
                         </div>
-                    </div>Upwork_101020683
+                    </div>
                     <div class="grid grid-cols-2 gap-3 mb-3">
                         <div>
                             <x-input
